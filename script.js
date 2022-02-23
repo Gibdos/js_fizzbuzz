@@ -2,7 +2,7 @@ const numberInput = document.querySelector('#number'); // get the number input f
 const ulList = document.querySelector('ul');
 numberInput.value = ''
 
-numberInput.addEventListener('change', () => { // Check for a change in the number and do...
+numberInput.addEventListener('keyup', () => { // Check for a change in the number and do...
   ulList.innerHTML = ''; // empty the list
   const numberValue = numberInput.value; // Get the number value that was inputted
   if (numberValue > 100) {
