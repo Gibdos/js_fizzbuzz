@@ -1,0 +1,32 @@
+* {
+    font-family: 'Ubuntu', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background: #555555;
+    color: white;
+    text-align: center;
+}
+
+ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    width: 70%;
+    margin: 1em auto;
+    list-style: none;
+    gap: 1em;
+    text-align: center;
+}
+
+li {
+    background-color: #4b4453;
+    padding: 1em;
+    border-radius: .5em;
+    box-shadow: 1px 1px 1px black;
+}
+
+li:hover {
+    cursor: pointer;
+    scale: 1.1;
+}
