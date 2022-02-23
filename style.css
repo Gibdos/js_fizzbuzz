@@ -30,3 +30,40 @@ li:hover {
     cursor: pointer;
     scale: 1.1;
 }
+
+input[type=number] {
+    padding: 1em;
+    margin-top: 2em;
+    -webkit-appearance: textfield;
+    -moz-appearance: textfield;
+    border: none;
+    outline: 1px solid white;
+    background-color: transparent;
+    transition: all 150ms ease-in-out;
+    width: 100px;
+    color: white;
+}
+
+input[type=number]:focus {
+    outline: 1px solid black;
+    border: none;
+    background: #00000050;
+    color: white;
+    font-weight: bold;
+}
+
+input[type=submit] {
+    margin-top: 2em;
+    padding: 1em;
+    background-color: #4b4453;
+    border: 1px solid #4b4453;
+    border-radius: .5em;
+    box-shadow: 1px 1px 1px black;
+    color: white;
+    cursor: pointer;
+    transition: all 150ms ease-in-out;
+}
+
+input[type=submit]:hover {
+    scale: 1.1;
+}

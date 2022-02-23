@@ -5,6 +5,9 @@ numberInput.value = ''
 numberInput.addEventListener('change', () => { // Check for a change in the number and do...
   ulList.innerHTML = ''; // empty the list
   const numberValue = numberInput.value; // Get the number value that was inputted
+  if (numberValue > 100) {
+    return;
+  }
 for (let i = 1; i <= numberValue; i++) { // run a loop as long as the Int is lower than the inputted number
   if (i % 3 === 0 && i % 5 === 0) { // if the value of i is divisible by 3 && 5
     createList('FizzBuzz') // create a new li-tag with the content FizzBuzz
@@ -32,4 +35,9 @@ function createList(input) {
         createList.style.backgroundColor = '#008e9b'
       }
       ulList.appendChild(createList); // append the li-tag with content to the ul-tag
+}
+
+function resetGame() {
+  ulList.innerHTML = ''
+  numberInput.value = ''
 }
